@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2025-10-29 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "linked_experiment",
+  "step_name",
+  "column_break_1",
+  "status",
+  "assigned_to",
+  "section_break_2",
+  "instruction"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TASK-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linked_experiment",
+   "fieldtype": "Link",
+   "label": "Linked Experiment",
+   "options": "R and D Experiment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "step_name",
+   "fieldtype": "Data",
+   "label": "Step Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nIn Progress\nCompleted\nCancelled",
+   "default": "Pending",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Instruction"
+  },
+  {
+   "fieldname": "instruction",
+   "fieldtype": "Text Editor",
+   "label": "Instruction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-29 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "R and D",
+ "name": "R and D Task",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

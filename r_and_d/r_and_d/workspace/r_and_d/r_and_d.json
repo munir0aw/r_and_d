@@ -1,0 +1,284 @@
+{
+  "charts": [],
+  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"R and D Project\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"R and D Experiment\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"R and D Sample\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"R and D Report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Masters & Configuration</b></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Projects & Experiments\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Resources\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports & Analytics\",\"col\":4}}]",
+  "creation": "2025-10-29 00:00:00.000000",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "workflow",
+  "idx": 0,
+  "is_hidden": 0,
+  "label": "R and D",
+  "links": [
+    {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Projects & Experiments",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Project",
+      "link_count": 0,
+      "link_to": "R and D Project",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Project",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Experiment",
+      "link_count": 0,
+      "link_to": "R and D Experiment",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Project",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Sample",
+      "link_count": 0,
+      "link_to": "R and D Sample",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Project",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Report",
+      "link_count": 0,
+      "link_to": "R and D Report",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Experiment",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Result Entry",
+      "link_count": 0,
+      "link_to": "R and D Result Entry",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Task",
+      "link_count": 0,
+      "link_to": "R and D Task",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Resources",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Lab Material",
+      "link_count": 0,
+      "link_to": "Lab Material",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Equipment",
+      "link_count": 0,
+      "link_to": "R and D Equipment",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Test Method",
+      "link_count": 0,
+      "link_to": "R and D Test Method",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Parameter",
+      "link_count": 0,
+      "link_to": "R and D Parameter",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Technician",
+      "link_count": 0,
+      "link_to": "R and D Technician",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Material Request",
+      "link_count": 0,
+      "link_to": "R and D Material Request",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Safety Record",
+      "link_count": 0,
+      "link_to": "R and D Safety Record",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Reports & Analytics",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "R and D Project",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "R and D Project Summary",
+      "link_count": 0,
+      "link_to": "R and D Project Summary",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Experiment",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "R and D Experiment Results",
+      "link_count": 0,
+      "link_to": "R and D Experiment Results",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Equipment",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "R and D Equipment Calibration",
+      "link_count": 0,
+      "link_to": "R and D Equipment Calibration",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Sample",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "R and D Sample Tracking",
+      "link_count": 0,
+      "link_to": "R and D Sample Tracking",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "R and D Test Method",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Test Method Catalog",
+      "link_count": 0,
+      "link_to": "R and D Test Method Catalog",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Approval",
+      "link_count": 0,
+      "link_to": "R and D Approval",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    }
+  ],
+  "modified": "2025-10-29 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "R and D",
+  "name": "R and D",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": "",
+  "roles": [],
+  "sequence_id": 20.0,
+  "shortcuts": [
+    {
+      "label": "R and D Project",
+      "link_to": "R and D Project",
+      "type": "DocType"
+    },
+    {
+      "label": "R and D Experiment",
+      "link_to": "R and D Experiment",
+      "type": "DocType"
+    },
+    {
+      "label": "R and D Sample",
+      "link_to": "R and D Sample",
+      "type": "DocType"
+    },
+    {
+      "label": "R and D Report",
+      "link_to": "R and D Report",
+      "type": "DocType"
+    }
+  ],
+  "title": "R and D"
+}

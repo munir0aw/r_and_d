@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2025-10-29 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "requested_by",
+  "linked_project",
+  "column_break_1",
+  "request_date",
+  "status",
+  "section_break_2",
+  "material_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MAT-REQ-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "linked_project",
+   "fieldtype": "Link",
+   "label": "Linked Project",
+   "options": "R and D Project"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date",
+   "default": "Today",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nFulfilled\nCancelled",
+   "default": "Pending",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Material List"
+  },
+  {
+   "fieldname": "material_list",
+   "fieldtype": "Table",
+   "label": "Material Items",
+   "options": "R and D Material Item",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-29 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "R and D",
+ "name": "R and D Material Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

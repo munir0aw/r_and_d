@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2025-10-29 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project_name",
+  "project_type",
+  "objective",
+  "column_break_1",
+  "status",
+  "principal_investigator",
+  "section_break_2",
+  "start_date",
+  "column_break_3",
+  "end_date",
+  "section_break_4",
+  "description",
+  "section_break_5",
+  "samples",
+  "section_break_6",
+  "experiments",
+  "section_break_7",
+  "reports"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Project ID",
+   "options": "RDNPJ-.YY.-.###",
+   "default": "RDNPJ-.YY.-.###",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Select",
+   "label": "Project Type",
+   "options": "Lab\nEnvironmental\nProduct\nProcess",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Small Text",
+   "label": "Objective",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nIn Progress\nReview\nCompleted\nCancelled",
+   "default": "Draft",
+   "reqd": 1
+  },
+  {
+   "fieldname": "principal_investigator",
+   "fieldtype": "Link",
+   "label": "Principal Investigator",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Timeline"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Samples",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "samples",
+   "fieldtype": "Table",
+   "label": "Samples",
+   "options": "R and D Project Sample"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Experiments",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "experiments",
+   "fieldtype": "Table",
+   "label": "Experiments",
+   "options": "R and D Project Experiment"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Reports",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "reports",
+   "fieldtype": "Table",
+   "label": "Reports",
+   "options": "R and D Project Report"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-29 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "R and D",
+ "name": "R and D Project",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

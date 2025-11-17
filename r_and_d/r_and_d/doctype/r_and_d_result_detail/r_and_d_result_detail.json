@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2025-10-29 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "value",
+  "unit",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "options": "R and D Parameter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit",
+   "fetch_from": "parameter.unit"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-29 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "R and D",
+ "name": "R and D Result Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2025-10-29 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "performed_by",
+  "result",
+  "next_calibration_date",
+  "certificate"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Calibration Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "performed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Performed By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Result",
+   "options": "Pass\nFail\nNeedsAdjustment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "next_calibration_date",
+   "fieldtype": "Date",
+   "label": "Next Calibration Date"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Attach",
+   "label": "Certificate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-29 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "R and D",
+ "name": "R and D Calibration Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

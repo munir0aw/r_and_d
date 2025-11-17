@@ -1,0 +1,121 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2025-10-29 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "linked_project",
+    "sample_type",
+    "column_break_1",
+    "status",
+    "source",
+    "received_date",
+    "section_break_2",
+    "custody",
+    "remarks",
+    "section_break_3",
+    "description"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Select",
+      "label": "Sample ID",
+      "options": "RNDSPL-.YY.-.###",
+      "default": "RNDSPL-.YY.-.###",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "linked_project",
+      "fieldtype": "Link",
+      "label": "Linked Project",
+      "options": "R and D Project",
+      "reqd": 1
+    },
+    {
+      "fieldname": "sample_type",
+      "fieldtype": "Data",
+      "label": "Sample Type",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Received\nTesting\nArchived\nDisposed",
+      "default": "Received",
+      "reqd": 1
+    },
+    {
+      "fieldname": "source",
+      "fieldtype": "Data",
+      "label": "Source"
+    },
+    {
+      "fieldname": "received_date",
+      "fieldtype": "Date",
+      "label": "Received Date",
+      "default": "Today",
+      "reqd": 1
+    },
+    {
+      "fieldname": "section_break_2",
+      "fieldtype": "Section Break",
+      "label": "Tracking"
+    },
+    {
+      "fieldname": "custody",
+      "fieldtype": "Link",
+      "label": "Custody",
+      "options": "User"
+    },
+    {
+      "fieldname": "remarks",
+      "fieldtype": "Small Text",
+      "label": "Remarks"
+    },
+    {
+      "fieldname": "section_break_3",
+      "fieldtype": "Section Break",
+      "label": "Description"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text Editor",
+      "label": "Description"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-10-29 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "R and D",
+  "name": "R and D Sample",
+  "naming_rule": "By Naming Series",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}
