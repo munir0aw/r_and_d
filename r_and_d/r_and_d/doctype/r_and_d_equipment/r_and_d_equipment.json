@@ -1,10 +1,11 @@
 {
  "actions": [],
- "autoname": "field:equipment_name",
+ "autoname": "naming_series:",
  "creation": "2025-10-29 00:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "equipment_name",
   "model_number",
   "serial_no",
@@ -19,11 +20,18 @@
  ],
  "fields": [
   {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "options": "EQP-.YYYY.-\nEQP-LAB-.YYYY.-\nEQP-RD-.YYYY.-",
+   "reqd": 1,
+   "default": "EQP-.YYYY.-"
+  },
+  {
    "fieldname": "equipment_name",
    "fieldtype": "Data",
    "label": "Equipment Name",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "model_number",
@@ -86,7 +94,7 @@
  "modified_by": "Administrator",
  "module": "R and D",
  "name": "R and D Equipment",
- "naming_rule": "By fieldname",
+ "naming_rule": "",
  "owner": "Administrator",
  "permissions": [
   {
