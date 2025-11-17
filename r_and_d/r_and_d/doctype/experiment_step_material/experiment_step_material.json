@@ -31,24 +31,6 @@
  ],
  "fields": [
   {
-   "fieldname": "parent",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Parent"
-  },
-  {
-   "fieldname": "parentfield",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Parent Field"
-  },
-  {
-   "fieldname": "parenttype",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Parent Type"
-  },
-  {
    "fieldname": "step_name",
    "fieldtype": "Data",
    "in_list_view": 1,
