@@ -117,5 +117,6 @@
   "sort_field": "modified",
   "sort_order": "DESC",
   "states": [],
+  "title_field": "sample_type",
   "track_changes": 1
 }
