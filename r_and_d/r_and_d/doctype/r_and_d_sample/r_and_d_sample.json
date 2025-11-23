@@ -25,8 +25,7 @@
       "label": "ID",
       "options": "RNDSPL-.YY.-.###",
       "default": "RNDSPL-.YY.-.###",
-      "reqd": 1,
-      "in_list_view": 1
+      "reqd": 1
     },
     {
       "fieldname": "linked_project",
