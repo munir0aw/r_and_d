@@ -92,22 +92,19 @@
    "fieldtype": "Link",
    "label": "Unit",
    "options": "UOM",
-   "fetch_from": "material.unit_of_measurement",
-   "read_only": 1
+   "fetch_from": "material.unit_of_measurement"
   },
   {
    "fieldname": "batch_number",
    "fieldtype": "Data",
    "label": "Batch",
-   "fetch_from": "material.batch_number",
-   "read_only": 1
+   "fetch_from": "material.batch_number"
   },
   {
    "fieldname": "expiry_date",
    "fieldtype": "Date",
    "label": "Expiry",
-   "fetch_from": "material.expiry_date",
-   "read_only": 1
+   "fetch_from": "material.expiry_date"
   },
   {
    "fieldname": "section_break_params",
