@@ -32,7 +32,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Result",
-   "options": "Pass\nFail\nNeedsAdjustment",
+   "options": "Pass\nFail\nNeeds Adjustment",
    "reqd": 1
   },
   {
