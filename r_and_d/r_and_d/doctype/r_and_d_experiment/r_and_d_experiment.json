@@ -29,8 +29,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Experiment ID",
+   "label": "ID",
    "options": "RNDEXP-.YY.-.####",
    "default": "RNDEXP-.YY.-.####",
    "reqd": 1

@@ -20,7 +20,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series",
+   "label": "ID",
    "options": "APP-.YYYY.-",
    "reqd": 1
   },
@@ -85,7 +85,7 @@
  "modified_by": "Administrator",
  "module": "R and D",
  "name": "R and D Approval",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "By Naming Series",
  "owner": "Administrator",
  "permissions": [
   {

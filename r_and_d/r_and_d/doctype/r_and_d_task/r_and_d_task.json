@@ -18,7 +18,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series",
+   "label": "ID",
    "options": "TASK-.YYYY.-",
    "reqd": 1
   },
@@ -70,7 +70,7 @@
  "modified_by": "Administrator",
  "module": "R and D",
  "name": "R and D Task",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "By Naming Series",
  "owner": "Administrator",
  "permissions": [
   {
