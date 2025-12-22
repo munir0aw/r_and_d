@@ -73,7 +73,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Lab Material",
-   "options": "Lab Material",
+   "options": "R and D Lab Material",
    "columns": 3
   },
   {

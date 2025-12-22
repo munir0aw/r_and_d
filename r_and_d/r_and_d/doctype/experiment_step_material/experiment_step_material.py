@@ -19,7 +19,7 @@ class ExperimentStepMaterial(Document):
 
 		# Validate stock availability if material and quantity are set
 		if self.material and self.quantity_used:
-			material_doc = frappe.get_doc("Lab Material", self.material)
+			material_doc = frappe.get_doc("R and D Lab Material", self.material)
 			if material_doc.current_stock < self.quantity_used:
 				frappe.throw(
 					f"Insufficient stock for {material_doc.material_name}. "

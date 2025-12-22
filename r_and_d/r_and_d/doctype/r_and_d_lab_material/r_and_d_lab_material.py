@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class LabMaterial(Document):
+class RAndDLabMaterial(Document):
 	def validate(self):
 		# Validate expiry date
 		if self.expiry_date:

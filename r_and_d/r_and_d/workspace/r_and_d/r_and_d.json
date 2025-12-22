@@ -98,11 +98,33 @@
       "dependencies": "",
       "hidden": 0,
       "is_query_report": 0,
-      "label": "Lab Material",
+      "label": "R and D Lab Material",
       "link_count": 0,
-      "link_to": "Lab Material",
+      "link_to": "R and D Lab Material",
       "link_type": "DocType",
       "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Lab Material Category",
+      "link_count": 0,
+      "link_to": "R and D Lab Material Category",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "R and D Material Type",
+      "link_count": 0,
+      "link_to": "R and D Material Type",
+      "link_type": "DocType",
+      "onboard": 0,
       "type": "Link"
     },
     {
