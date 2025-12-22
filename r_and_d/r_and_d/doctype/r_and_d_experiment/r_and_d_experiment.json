@@ -7,7 +7,9 @@
  "field_order": [
   "naming_series",
   "linked_project",
+  "project_name",
   "linked_sample",
+  "sample_name",
   "column_break_1",
   "method",
   "equipment",
@@ -29,6 +31,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "ID",
    "options": "RNDEXP-.YY.-.####",
    "default": "RNDEXP-.YY.-.####",
@@ -37,16 +40,31 @@
   {
    "fieldname": "linked_project",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Linked Project",
    "options": "R and D Project",
    "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "fetch_from": "linked_project.project_name",
+   "read_only": 1
   },
   {
    "fieldname": "linked_sample",
    "fieldtype": "Link",
    "label": "Linked Sample",
    "options": "R and D Sample"
+  },
+  {
+   "fieldname": "sample_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample Name",
+   "fetch_from": "linked_sample.sample_name",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_1",
@@ -103,6 +121,7 @@
   {
    "fieldname": "date_started",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "Date Started"
   },
   {
