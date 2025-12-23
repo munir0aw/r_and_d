@@ -1,3 +1,4 @@
 # Patches for r_and_d
 # Add patches here in the format:
 # module_name.patches.patch_file
+r_and_d.patches.rename_lab_material
