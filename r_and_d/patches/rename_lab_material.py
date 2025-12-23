@@ -19,32 +19,22 @@ def execute():
 			rename_doc("DocType", old_name, new_name, force=True, merge=False)
 			frappe.db.commit()
 			print(f"✅ Renamed {old_name} back to {new_name}")
+			return # We are done
 		except Exception as e:
 			print(f"⚠️ Could not rename: {e}")
 
-	# Case 2: New name ALREADY exists -> Just print
+	# Case 2: New name ALREADY exists -> Check permissions
 	if frappe.db.exists("DocType", new_name):
 		print(f"✅ {new_name} already exists in database.")
 	
-	# Case 3: Neither exists ??? -> This shouldn't happen if files are consistent, 
-	# but we can try to force reload
+	# Case 3: Neither exists -> Force reload
 	else:
-		print(f"⚠️ Neither {old_name} nor {new_name} found in DB. Attempting to install...")
+		print(f"⚠️ Neither {old_name} nor {new_name} found in DB. Forcing reload...")
 		try:
-			# Force install the app's doctypes
-			frappe.clear_cache()
-			frappe.sync_module("r_and_d") 
-			print(f"✅ Module synced. {new_name} should be visible now.")
+			# Correct way to reload a specific DocType [module, type, name]
+			frappe.reload_doc("r_and_d", "doctype", "r_and_d_lab_material")
+			frappe.reload_doc("r_and_d", "doctype", "r_and_d_material_type")
+			frappe.reload_doc("r_and_d", "doctype", "r_and_d_lab_material_category")
+			print(f"✅ Force reloaded {new_name}")
 		except Exception as e:
-			print(f"❌ Error syncing module: {e}")
-
-	# Final check
-	if frappe.db.exists("DocType", new_name):
-		# Ensure permissions are set
-		doc = frappe.get_doc("DocType", new_name)
-		# We don't overwrite permissions blindly usually, but if it was fresh, we ensure System Manager has it
-		# doc.permissions = [
-		# 	{"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
-		# ]
-		# doc.save(ignore_permissions=True)
-		print(f"Confirmed {new_name} is accessible.")
+			print(f"❌ Error reloading DocType: {e}")
