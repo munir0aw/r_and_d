@@ -7,7 +7,7 @@ frappe.ui.form.on("R and D Experiment", {
 	}
 });
 
-frappe.ui.form.on("Experiment Step Material", {
+frappe.ui.form.on("R and D Experiment Step Material", {
 	steps_add(frm, cdt, cdn) {
 		// Set default status for new rows
 		let row = locals[cdt][cdn];

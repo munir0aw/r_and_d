@@ -111,7 +111,7 @@
    "fieldname": "steps",
    "fieldtype": "Table",
    "label": "Steps",
-   "options": "Experiment Step Material"
+   "options": "R and D Experiment Step Material"
   },
   {
    "fieldname": "section_break_3",

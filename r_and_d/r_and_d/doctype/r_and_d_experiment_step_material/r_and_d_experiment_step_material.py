@@ -6,7 +6,7 @@ from frappe.model.document import Document
 from frappe.utils import getdate, nowdate
 
 
-class ExperimentStepMaterial(Document):
+class RAndDExperimentStepMaterial(Document):
 	def validate(self):
 		# Validate expiry date if material is selected
 		if self.material and self.expiry_date:
