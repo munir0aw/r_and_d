@@ -1,20 +1,20 @@
 {
  "actions": [],
- "autoname": "field:material_type_name",
+ "autoname": "field:category_name",
  "creation": "2025-12-24 15:20:00",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "material_type_name",
+  "category_name",
   "description",
   "is_active"
  ],
  "fields": [
   {
-   "fieldname": "material_type_name",
+   "fieldname": "category_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Material Type Name",
+   "label": "Category Name",
    "reqd": 1,
    "unique": 1
   },
@@ -35,7 +35,7 @@
  "modified": "2025-12-24 15:20:00",
  "modified_by": "Administrator",
  "module": "R and D",
- "name": "R and D Material Type",
+ "name": "R and D Lab Material Category",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
