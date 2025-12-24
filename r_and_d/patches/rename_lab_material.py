@@ -1,4 +1,5 @@
 import frappe
+# Updated fix: 2025-12-24
 from frappe.model.rename_doc import rename_doc
 
 def execute():
