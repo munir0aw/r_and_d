@@ -12,7 +12,7 @@ app_license = "MIT"
 
 from frappe import _
 
-__version__ = "1.0.0"
+__version__ = "1.5.3"
 app_version = __version__
 
 # Includes in <head>
