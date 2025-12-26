@@ -11,9 +11,7 @@ app_email = "your@email.com"
 app_license = "MIT"
 
 from frappe import _
-
-__version__ = "1.5.3"
-app_version = __version__
+from . import __version__ as app_version
 
 # Includes in <head>
 # ------------------
