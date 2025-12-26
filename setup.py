@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
 	install_requires = f.read().strip().split("\n")
 
 # Simple version definition
-version = "1.0.0"
+version = "1.5.3"
 
 setup(
 	name="r_and_d",

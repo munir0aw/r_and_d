@@ -1,7 +1,7 @@
 [project]
 name = "r_and_d"
 authors = [
-    { name = "Your Company", email = "your@email.com"}
+    { name = "DTG", email = "mam@dtg-ksa.com"}
 ]
 description = "Research and Development Module for ERPNext"
 requires-python = ">=3.10"
