@@ -6,6 +6,7 @@ with open("requirements.txt") as f:
 # Simple version definition
 version = "1.5.3"
 
+
 setup(
 	name="r_and_d",
 	version=version,
