@@ -2,4 +2,3 @@
 # Add patches here in the format:
 # module_name.patches.patch_file
 r_and_d.patches.v2_restore_doctypes
-r_and_d.patches.v3_sync_missing_doctypes
