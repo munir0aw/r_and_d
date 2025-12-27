@@ -73,7 +73,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Lab Material",
-   "options": "R and D Lab Material",
+   "options": "Lab Material",
    "columns": 3
   },
   {
@@ -164,7 +164,7 @@
  "modified": "2025-12-24 15:25:00",
  "modified_by": "Administrator",
  "module": "R and D",
- "name": "R and D Experiment Step Material",
+ "name": "Experiment Step Material",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

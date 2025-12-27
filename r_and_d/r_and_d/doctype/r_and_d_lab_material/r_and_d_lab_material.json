@@ -60,18 +60,17 @@
   },
   {
    "fieldname": "material_type",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Material Type",
-   "options": "R and D Material Type",
+   "options": "Raw Material\nPrepared Material\nReagent\nSolvent\nConsumable",
    "reqd": 1,
    "quick_entry": 1
   },
   {
    "fieldname": "category",
-   "fieldtype": "Link",
-   "label": "Category",
-   "options": "R and D Lab Material Category"
+   "fieldtype": "Data",
+   "label": "Category"
   },
   {
    "fieldname": "column_break_1",
@@ -234,7 +233,7 @@
  "modified": "2025-12-24 15:20:00",
  "modified_by": "Administrator",
  "module": "R and D",
- "name": "R and D Lab Material",
+ "name": "Lab Material",
  "naming_rule": "By Naming Series",
  "owner": "Administrator",
  "permissions": [

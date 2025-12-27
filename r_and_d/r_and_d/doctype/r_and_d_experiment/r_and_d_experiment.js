@@ -7,7 +7,7 @@ frappe.ui.form.on("R and D Experiment", {
 	}
 });
 
-frappe.ui.form.on("R and D Experiment Step Material", {
+frappe.ui.form.on("Experiment Step Material", {
 	steps_add(frm, cdt, cdn) {
 		// Set default status for new rows
 		let row = locals[cdt][cdn];
@@ -20,7 +20,7 @@ frappe.ui.form.on("R and D Experiment Step Material", {
 		// Auto-fetch material details when material is selected
 		let row = locals[cdt][cdn];
 		if (row.material) {
-			frappe.db.get_doc('R and D Lab Material', row.material).then(doc => {
+			frappe.db.get_doc('Lab Material', row.material).then(doc => {
 				frappe.model.set_value(cdt, cdn, 'unit_of_measurement', doc.unit_of_measurement);
 				frappe.model.set_value(cdt, cdn, 'batch_number', doc.batch_number);
 				frappe.model.set_value(cdt, cdn, 'expiry_date', doc.expiry_date);
